@@ -37,7 +37,10 @@ function exit(){
 function exit(code){
 	console.log("\n" + chalk.bold.italic.green(exitMessages[Math.floor(Math.random()*exitMessages.length)]));
 	console.log(chalk.red("Exiting"));
-	process.exit(code);
+	console.log(chalk.bold("Press any key to exit"));
+	process.stdin.setRawMode(true);
+	process.stdin.resume();
+	process.stdin.on('data',process.exit.bind(process, code));
 }
 
 module.exports = exit();
