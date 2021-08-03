@@ -6,4 +6,4 @@ Creates funny text for discord
 2. run `node index` from PowerShell
 
 ### License
-This program is licensed under the WTFPL 
+This program is licensed under the Do What The Fuck You Want Public License v2 
